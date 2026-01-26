@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">IT Web</div>
+    <div class="menu-toggle">☰</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="page-title">Contact</h1>
+
+  <form class="contact-form" id="contactForm">
+    <div class="field">
+      <input type="text" id="name" required>
+      <label>Họ tên</label>
+    </div>
+
+    <div class="field">
+      <input type="email" id="email" required>
+      <label>Email</label>
+    </div>
+
+    <div class="field">
+      <textarea id="message" rows="4" required></textarea>
+      <label>Nội dung</label>
+    </div>
+
+    <button class="btn-loading" type="submit">
+      <span>Gửi liên hệ</span>
+    </button>
+  </form>
+</main>
+
+<div id="toast">Gửi thành công!</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
